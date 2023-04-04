@@ -36,13 +36,19 @@ const screen = {
                     <h2>Repositórios</h2>
                     <ul>${repositoriesItens}</ul>
                 </div>`
+        } else {
+            this.userProfile.innerHTML += `
+                <div class="repositories section">
+                    <h2>Repositórios</h2>
+                    <ul>Não há repositórios</ul>
+                </div>`
         }
 
         let eventsItens = ''
         user.events.forEach((event) => {
             if (event.type === 'CreateEvent') {
                 eventsItens += `<li><p><span>${event.repo.name}</span> -${event.payload.description}</p></li>`
-            } if (event.type === 'PushEvent') {
+            } else {
                 eventsItens += `<li><p><span>${event.repo.name}</span> - ${event.payload.commits[0].message}</p></li>`
             }
         })
