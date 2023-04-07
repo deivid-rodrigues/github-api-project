@@ -9,6 +9,10 @@
 the name, bio, number of followers and followings, the ten firsts repositories and lasts events did by the user.</p>
 <br>
 
+<div align='center'>
+<img src='https://user-images.githubusercontent.com/110034692/230587073-e5af5712-cd58-4128-b2d0-3182ba4dd755.gif' alt='github api gif'>
+</div>
+
 <h1 align='center'>Technologies 🚀</h1>
 <br>
 
