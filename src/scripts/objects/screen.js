@@ -28,7 +28,7 @@ const screen = {
                     <p><i class="fa-solid fa-eye"></i> ${repo.watchers_count}</p>
                     <p><i class="fa-solid fa-laptop-code"></i> ${repo.language}</p>
                 </div>
-            </li>`
+            </li>`})
 
         if (user.repositories.length > 0) {
             this.userProfile.innerHTML += `
