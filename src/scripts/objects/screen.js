@@ -9,8 +9,8 @@ const screen = {
                 <p>${user.bio ?? 'Não possui bio cadastrada 😢'}</p>
                 <p class="followers"><i class="fa-solid fa-users"></i> seguidores: ${user.followers}</p>
                 <p class="followers"><i class="fa-solid fa-users"></i> seguindo: ${user.following}</p>
-             </div>
-         </div>`
+            </div>
+        </div>`
 
         let repositoriesItens = ''
         user.repositories.forEach(repo => {
@@ -21,14 +21,14 @@ const screen = {
 
             repositoriesItens += `
             <li>
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-            <div class="repositories-info">
+                <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                <div class="repositories-info">
                     <p><i class="fa-solid fa-code-branch"></i> ${repo.forks_count}</p>
                     <p><i class="fa-regular fa-star" style="color: #ffea00;"></i> ${repo.stargazers_count}</p>
                     <p><i class="fa-solid fa-eye"></i> ${repo.watchers_count}</p>
                     <p><i class="fa-solid fa-laptop-code"></i> ${repo.language}</p>
-            </div>
-        </li>`})
+                </div>
+            </li>`
 
         if (user.repositories.length > 0) {
             this.userProfile.innerHTML += `
