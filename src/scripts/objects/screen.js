@@ -9,8 +9,8 @@ const screen = {
                 <p>${user.bio ?? 'Não possui bio cadastrada 😢'}</p>
                 <p class="followers"><i class="fa-solid fa-users"></i> seguidores: ${user.followers}</p>
                 <p class="followers"><i class="fa-solid fa-users"></i> seguindo: ${user.following}</p>
-             </div>
-         </div>`
+            </div>
+        </div>`
 
         let repositoriesItens = ''
         user.repositories.forEach(repo => {
