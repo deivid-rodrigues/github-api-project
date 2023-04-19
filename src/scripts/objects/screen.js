@@ -21,13 +21,17 @@ const screen = {
 
             repositoriesItens += `
             <li>
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-            <div class="repositories-info">
-                    <p><i class="fa-solid fa-code-branch"></i> ${repo.forks_count}</p>
-                    <p><i class="fa-regular fa-star" style="color: #ffea00;"></i> ${repo.stargazers_count}</p>
-                    <p><i class="fa-solid fa-eye"></i> ${repo.watchers_count}</p>
-                    <p><i class="fa-solid fa-laptop-code"></i> ${repo.language}</p>
-            </div>
+            <a href="${repo.html_url}" target="_blank">
+                <div class="container-item">
+                    <h3>${repo.name}</h3>
+                    <div class="repositories-info">
+                        <p><i class="fa-solid fa-code-branch"></i> ${repo.forks_count}</p>
+                        <p><i class="fa-regular fa-star" style="color: #ffea00;"></i> ${repo.stargazers_count}</p>
+                        <p><i class="fa-solid fa-eye"></i> ${repo.watchers_count}</p>
+                        <p><i class="fa-solid fa-laptop-code"></i> ${repo.language}</p>
+                    </div>
+                </div>
+            </a>
         </li>`})
 
         if (user.repositories.length > 0) {
